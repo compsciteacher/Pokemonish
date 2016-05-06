@@ -1,0 +1,5 @@
+org.jchassis.event
+org.jchassis.geom.int2d
+org.jchassis.name
+org.jchassis.termctl
+org.jchassis.termctl.ansi

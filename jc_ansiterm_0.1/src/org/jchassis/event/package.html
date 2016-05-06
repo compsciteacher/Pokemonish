@@ -1,0 +1,29 @@
+<!-- Copyright (C) 2003-2005 Sam Stainsby. All rights reserved.  -->
+<!--                                                        -->
+<!-- This file is part of JChassis. JChassis is distributed -->
+<!-- under the terms of version 2.1 of the GNU Lesser       -->
+<!-- General Public License.                                -->
+
+
+<BODY>
+
+Generic event handling utilities.
+<P>
+Events not only carry data, but can have "roles". Roles are
+String metadata that describes what the event represents.
+It is up to the user of this event API to decide what this
+is used for.
+<P>
+For example, the event object might be a String, and the role
+"property/title" signifies that the event source has changed a 
+(JavaBeans) property called "title".
+<P>
+Role names that start with "property/" are reserved for property changes
+(in the JavaBeans sense). Custom roles that are specific to your application
+should be prefixed with "app/[your-applications-name]".
+
+<P><FONT SIZE=-1 COLOR="GRAY"> Copyright &copy; 2003-2005 Sam Stainsby.<BR>
+Verbatim copying and distribution of this entire generated javadoc document
+is permitted in any medium, provided this notice is preserved.</FONT>
+
+</BODY>

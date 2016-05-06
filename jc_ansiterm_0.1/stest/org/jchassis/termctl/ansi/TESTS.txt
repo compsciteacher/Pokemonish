@@ -1,0 +1,38 @@
+TESTS
+
+
+@Test: test_ansi_termctl_cursor_motion
+
+Tests the motion of the cursor under the ANSI/VT100 TerminalController 
+implementation.
+
+The output for this test should look like this, starting from the home 
+position:
+
+00000001 ABCDEFG
+34444451 00000001
+37888951 34444451
+37123951 37888951
+37154951 37123951
+37100051 37154951
+37666661 37100051
+32222222 37666661
+         32222222
+
+
+@Test: test_ansi_termctl_character_styles
+
+Output is self-explanatory. Styles of each row should match the 
+description in each row, where those character attributes are 
+supported.
+
+
+@Test: test_ansi_termctl_character_colors
+
+Outputs 8 rows each of 16 '*' characters. The backgound colour is
+changed from left to right, cycling though black, red, green, yellow,
+blue, magenta, cyan and white twice per row. The foreground colour is 
+changed for each row - it is cycled once through the same list of colours.
+The last 8 '*'s on each row are printed with the bold attribute
+switched on. This pattern covers every combination of foreground
+and background color and bold ("bright") attribute.
